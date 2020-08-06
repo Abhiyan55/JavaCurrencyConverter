@@ -1,3 +1,5 @@
+// Currency Converter Version 1.2
+
 
 import java.awt.*;
 import javax.swing.*;
@@ -8,19 +10,24 @@ import javax.swing.*;
 			CurrencyConverter g=new CurrencyConverter();
 		}
 
-	JButton b1,b2,b3;
+	JButton b1;
 	CurrencyConverter(){
-		setSize(400,400);
-		setVisible(true);
-
-		b1=new JButton("Conver to USD");
-		b2=new JButton("Convert to NRS");
-		b3=new JButton("RESET");
+		setSize(500,500);
+		
+		JLabel l = new JLabel("Enter amount in NRS (Rs.)");
+		JTextField t1 = new JTextField(4);
+		b1=new JButton("Convert to USD");	
+		
+		
+		add(l);
+		add(t1);
 		add(b1);
-		add(b2);
-		add(b3);
+		
+
 		setLayout(new FlowLayout());
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);                       
+
 		}
 
 		
