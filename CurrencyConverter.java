@@ -113,7 +113,7 @@ import java.awt.event.*;
 			
 			if(c1.getSelectedItem().equals("EUR")&& c2.getSelectedItem().equals("USD")) {
 
-				double value = num1 * 1.18;
+				double value = num1 * 1.19;
 				l4.setText( "$ " + value  );	
 			}
 			
